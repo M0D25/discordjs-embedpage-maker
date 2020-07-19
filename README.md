@@ -1,7 +1,5 @@
 # discordjs-embedpage-maker
 
-![.github/workflows/npmpublish.yml](https://github.com/xhayper/discordjs-embedpage-maker/workflows/.github/workflows/npmpublish.yml/badge.svg)
-
 A EmbedPage Maker For Discord.js
 
 # Demo!
