@@ -8,9 +8,9 @@ A EmbedPage Maker For Discord.js
 
 ![Demo](https://raw.githubusercontent.com/xhayper/discordjs-embedpage-maker/master/demo.gif)
 
-# This class extends RichEmbed!
+# This class extends MessageEmbed!
 
-So you can use all of RichEmbed functions which can be read [here](https://discord.js.org/#/docs/main/stable/class/RichEmbed)
+So you can use all of MessageEmbed functions which can be read [here](https://discord.js.org/#/docs/main/stable/class/MessageEmbed)
 
 # Additional Function
 
