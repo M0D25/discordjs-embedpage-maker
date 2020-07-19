@@ -1,0 +1,24 @@
+{
+  "name": "discordjs-embedpage-maker",
+  "version": "1.0.3",
+  "description": "A EmbedPage Maker For Discord.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discordjs",
+    "embed-page",
+    "extension",
+    "richembed"
+  ],
+  "author": "xhayper",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xhayper/discordjs-embedpage-maker.git"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
