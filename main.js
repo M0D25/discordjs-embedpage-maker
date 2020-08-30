@@ -138,7 +138,7 @@ class embedPageMaker extends Discord.MessageEmbed {
         if (!this.embedData.running || !this.embedData.embedMessage || !this.embedData.client || this.maxPage <= 1) return this;
 
         const filter = (reaction, user) => {
-            return Object.keys(this.embedData.emoji).map(e => this.embedData.emoji[e]).includes(reaction.emoji.name) && user.id === this.embedData.originalMessage.author.id;
+            return Object.keys(this.embedData.reactionData).map(e => this.embedData.reactionData[e]).includes(reaction.emoji.name) && user.id === this.embedData.originalMessage.author.id;
         };
 
         this.embedData.embedMessage.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
@@ -147,7 +147,7 @@ class embedPageMaker extends Discord.MessageEmbed {
 
                 await reaction.remove(this.embedData.originalMessage.author.id);
 
-                if (!Object.keys(this.embedData.emoji).map(e => this.embedData.reactionData[e]).includes(reaction.reactionData.name)) await this._awaitReaction();
+                if (!Object.keys(this.embedData.reactionData).map(e => this.embedData.reactionData[e]).includes(reaction.reactionData.name)) await this._awaitReaction();
 
                 if (reaction.emoji.name === this.embedData.reactionData.prevPage) {
                     await this._prevPage();
