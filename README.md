@@ -36,9 +36,9 @@ reactionData {
 # Example
 
 ```js
-let Discord = require("discord.js"),
-    embedPageMaker = require("discordjs-embedpage-maker"),
-    client = new Discord.Client();
+const Discord = require("discord.js");
+const embedPageMaker = require("discordjs-embedpage-maker");
+const client = new Discord.Client();
 
 client.on("message", (msg) => {
     if (msg.author.bot) return;
