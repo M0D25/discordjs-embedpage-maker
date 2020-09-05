@@ -157,9 +157,6 @@ class embedPageMaker extends Discord.MessageEmbed {
                 if (reaction.emoji.name === this.embedData.reactionData.nextPage) {
                     await this._nextPage();
                 }
-            })
-            .catch(() => {
-                this._endPage();
             });
     }
 
