@@ -1,9 +1,12 @@
 {
-  "name": "discordjs-embedpage-maker",
+  "name": "@xhayper/discordjs-embedpage-maker",
   "version": "1.2.6",
   "description": "A EmbedPage Maker For Discord.js",
   "main": "main.js",
   "runkitExampleFilename": "./example/example.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "discordjs",
     "embed-page",
