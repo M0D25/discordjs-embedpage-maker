@@ -145,7 +145,7 @@ class embedPageMaker extends Discord.MessageEmbed {
             .then(async collected => {
                 const reaction = collected.first();
 
-                if (!Object.keys(this.embedData.reactionData).map(e => this.embedData.reactionData[e]).includes(reaction.reactionData.name)) await this._awaitReaction();
+                if (!Object.keys(this.embedData.reactionData).map(e => this.embedData.reactionData[e]).includes(reaction.name)) await this._awaitReaction();
 
                 if (reaction.emoji.name === this.embedData.reactionData.prevPage) {
                     await this._prevPage();
